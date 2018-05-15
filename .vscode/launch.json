@@ -8,7 +8,7 @@
             "name": "Run js",
             "type": "node",
             "request": "launch",
-            "program": "${workspaceRoot}/06-use-module.js",
+            "program": "${workspaceRoot}/08-deep-module.js",
             "stopOnEntry": false,
             "args": [],
             "cwd": "${workspaceRoot}",
