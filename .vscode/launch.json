@@ -5,10 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Run 04-use-VSCode.js",
+            "name": "Run js",
             "type": "node",
             "request": "launch",
-            "program": "${workspaceRoot}/04-use-VSCode.js",
+            "program": "${workspaceRoot}/06-use-module.js",
             "stopOnEntry": false,
             "args": [],
             "cwd": "${workspaceRoot}",
