@@ -7,29 +7,30 @@
 
 
 //第一种    对module.exports赋值
-function hello1() {
-    console.log('hello1,World!');
+/*
+function hello() {
+    console.log('hello,World11111111111!');
 }
-function greet1(name) {
-    console.log('Hello1' + ',' + name + '!');
+function greet(name) {
+    console.log('Hello' + ',' + name + '!');
 }
 module.exports = {
-    hello1: hello1,
-    greet1: greet1
+    hello: hello,
+    greet: greet
 }
-
+*/
 
 
 
 //第二种     直接使用exports
-function hello2() {
-    console.log('hello2,World!');
+function hello() {
+    console.log('hello,World2222222222222222!');
 }
-function greet2(name) {
-    console.log('Hello2' + ',' + name + '!');
+function greet(name) {
+    console.log('Hello' + ',' + name + '!');
 }
-exports.hello2 = hello2;
-exports.greet2 = greet2;
+exports.hello = hello;
+exports.greet = greet;
 //但是你不可以直接对exports赋值
 //比如
 // exports = {
