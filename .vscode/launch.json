@@ -8,7 +8,7 @@
             "name": "Run js",
             "type": "node",
             "request": "launch",
-            "program": "${workspaceRoot}/11-use-09module.js",
+            "program": "${workspaceRoot}/12-basic-module.js",
             "stopOnEntry": false,
             "args": [],
             "cwd": "${workspaceRoot}",
