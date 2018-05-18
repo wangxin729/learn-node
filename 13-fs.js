@@ -96,4 +96,17 @@ console.log(buf);
 
 
 
+//同步读文件
 
+
+
+//除了标准的异步读取模式外，fs也提供相应的同步读取函数。
+//同步读取的函数和异步函数相比，多了一个Sync后缀，并且不接收回调函数，函数直接返回结果。
+
+
+
+//用fs模块同步读取一个文本文件的代码如下：
+'use strict';
+var fs = require('fs');
+var data = fs.readFileSync('13-sample.txt','utf-8');
+console.log(data);
