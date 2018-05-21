@@ -8,7 +8,7 @@
             "name": "Run js",
             "type": "node",
             "request": "launch",
-            "program": "${workspaceRoot}/13-fs-read.js",
+            "program": "${workspaceRoot}/14-fs-write.js",
             "stopOnEntry": false,
             "args": [],
             "cwd": "${workspaceRoot}",
