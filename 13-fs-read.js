@@ -106,7 +106,18 @@ console.log(buf);
 
 
 //用fs模块同步读取一个文本文件的代码如下：
+// 'use strict';
+// var fs = require('fs');
+// var data = fs.readFileSync('13-sample.txt','utf-8');
+// console.log(data);     //输出13-sample.txt文本文件里的内容
+//可见，原异步调用的回调函数的data被函数直接返回，函数名需要改为readFileSync，其他参数不变。
+//如果同步读取文件发生错误，则需要try...catch捕获该错误：
 'use strict';
 var fs = require('fs');
-var data = fs.readFileSync('13-sample.txt','utf-8');
-console.log(data);
+try {
+    var data = fs.readFileSync('13-sample.txt', 'utf-8');
+    console.log(data);
+} catch (err) {
+    //出错了
+}
+
