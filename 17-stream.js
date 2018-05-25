@@ -77,8 +77,27 @@ ws2.write(new Buffer('END','utf-8'));
 ws2.end();
 
 
+
+
 //所有可以读取数据的流都继承自stream.Readable
 //所有可以写入的流都继承自stream.Writable
+//***********读完这句话不是很理解它的意思
+//***********查阅文档有了以下理解
+//util是一个Node核心模块，提供常用函数的集合
+//util.inherits(constructor,superConstructor)是一个实现对象间原型继承的函数
+//例如
+//util.inherits(Sub, Base);    //使用之前先引入util模块
+//基础对象为Base    Sub继承自Base
+//*****Sub仅仅会继承Base在原型上定义的函数，在Base内部创造的属性和函数都不会被继承。
+//******打印Sub的实例(new Sub()),原型中定义的属性和函数不会作为该实例的属性和方法输出
+//所以可以有以下写法
+//第一步：继承Readable流的功能(使用前得引入util,stream)
+util.inherits(MyReadableStream, stream.Readable);
+//第二步：创建对象调用实例
+stream.Readable.call(this, opt);
+//在构造函数MyReadableStream里执行第二步中的语句，opt为构造函数的形参
+//然后MyReadableStream的实例就是一个读取数据的流
+//stream.Writable的用法同stream.Readable
 
 
 
