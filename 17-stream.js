@@ -92,9 +92,9 @@ ws2.end();
 //******打印Sub的实例(new Sub()),原型中定义的属性和函数不会作为该实例的属性和方法输出
 //所以可以有以下写法
 //第一步：继承Readable流的功能(使用前得引入util,stream)
-util.inherits(MyReadableStream, stream.Readable);
+// util.inherits(MyReadableStream, stream.Readable);
 //第二步：创建对象调用实例
-stream.Readable.call(this, opt);
+// stream.Readable.call(this, opt);
 //在构造函数MyReadableStream里执行第二步中的语句，opt为构造函数的形参
 //然后MyReadableStream的实例就是一个读取数据的流
 //stream.Writable的用法同stream.Readable
