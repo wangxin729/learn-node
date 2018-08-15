@@ -10,3 +10,6 @@
     //方法： GET还是POST,GET仅请求资源，POST会附带用户数据；
     //路劲： /full/url/path;
     //域名：由HOST头指定：
+
+
+//换电脑了，我重新用github了
